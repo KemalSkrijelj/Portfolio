@@ -2,7 +2,11 @@ body{
   margin:0 ;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 nav{
   height: 6rem;
   background-color: #010F36;
@@ -11,12 +15,14 @@ nav{
   align-items: center;
   position: relative;
 }
-nav button {
+nav li a {
+  text-decoration: none;
+  list-style: none;
   background: none;
   color: white;
   border: none;
   font-size: 25px;
-  margin-right: 8rem;
+  margin-right: 5rem;
   cursor: pointer;
 }
 nav h1 {
@@ -29,7 +35,7 @@ nav h1 a{
   left: 8rem;
   top: 2rem;
 }
-.container{
+#container{
   width: 100%;
   min-height: 46rem;
   display: flex;
@@ -51,35 +57,138 @@ nav h1 a{
 .rightside{
   width: 45%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  background-color: #010F36;
 }
-.nav {
-  height: 13%;
-  width: 100%;
-  background-color: #00022B;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
+.rightside h1{
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  color: white;
 }
-.nav button {
+.rightside p {
+  margin: 3rem 0rem 8rem 5rem;
+  color: white;
+  font-size: 25px;
+  text-align: start;
+  line-height: 3rem;
+}
+.rightside span {
+  margin: 0rem 0rem 1rem 5rem;
+  color: white;
   font-size: 20px;
-  background: none;
+}
+.icons{
+  display: flex;
+  margin-left: 5rem;
+  height: 23px;
+  width: 100px;
+  justify-content: space-between;
+}
+.rightside a {
+  width: 21px;
+  font-size: 20px;
+}
+#info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 46rem;
+  border-top: 2px dashed #010F36;
+}
+#info p {
+  font-size: 20px;
+  text-align: center;
+}
+#info button {
+  background-color: #010F36;
   border: none;
   color: white;
-  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
 }
-.info{
-  width: 100%;
-  min-height: 46rem;
-  background-color: blue;
+#info button a{
+  color: white;
+  text-decoration: none;
 }
-.projects{
+#info button:hover {
+  box-shadow: 6px 6px 5px #010F36;
+  background-color: green;
+}
+#projects{
+  display: flex;
   width: 100%;
-  min-height: 46rem;
+  min-height: 50rem;
+  background-color: #010F36;
+  color: white;
+  flex-direction: column;
+}
+#projects h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+.line1 {
+  display: flex;
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+.container {
+  position: relative;
+  width: 50%;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  height: 20rem;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 20rem;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 80%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.container:hover .overlay {
+  bottom: 50%;
+  height: 50%;
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.line1 .container a {
+  color: white;
+  font-size: 30px;
+}
+.line2 {
+  width: 100%;
+  height: 25rem;
   background-color: black;
 }
-.contactUs{
+#contactUs{
   width: 100%;
   min-height: 46rem;
   background-color: white;

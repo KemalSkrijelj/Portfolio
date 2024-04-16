@@ -3,25 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2ae966d3c8.js" crossorigin="anonymous"></script>
   <title>Kemal's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav>
     <h1><a href="C:\Users\computer\Desktop\Portfolio\index.html">myPortfolio.</a></h1>
-    <button>Home &nbsp Informations &nbsp Projects &nbsp Contact Us</button>
+    <li><a href="">Home</a></li>
+    <li><a href="#info">Informations</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contactUs">Contact</a></li>
   </nav>
 
-  <div class="container">
+  <section id="container">
     <div class="leftside"><img class="logo" src="LOGO.jpeg" alt=""></div>
     
     <div class="rightside">
       <h1>Welcome!</h1>
+      <p>Hi, I am Kemal Skrijelj.I am graduating from high school "Gimnazija" in Novi Pazar.
+         In the future I plan to be a software engineer.
+         I have completed HTML-CSS, JavaScript and I'm currently completing React.</p>
+      <span>kemalskrijelj6@gmail.com</span>
+      <span>+381 63 752 77 48</span>
+      <div class="icons">
+      <a href="https://www.facebook.com/KemalSkrijeljKemo"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+      <a href="https://www.linkedin.com/in/kemal-%C5%A1krijelj-b72785218/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+      <a href="https://www.instagram.com/kemal.skrijelj/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></div>
     </div>
-  </div>
-  <div class="info"></div>
-  <div class="projects"></div>
-  <div class="contactUs"></div>
+  </section>
+  
+  <section id="info">
+    <h1>INFORMATIONS</h1>
+    <p style="width: 700px;">Born on 10.10.2005, Kemal Skrijelj hails from Novi Pazar, Serbia.From an early age, I'm exhibited a natural curiosity and determination
+      that would set the stage for his unique journey.</p>
+      <p style="width: 700px;">Basketball Passion: My first steps in basketball began age of 8, marking the commencement of a decade-long journey on the court.</p>
+      <p style="width: 700px;">Educational Pursuits: I graduated from "Bratstvo" primary school, as a holder of Vuk's diploma. I entered high school in 2019.
+       I go to secondary school "Gimnazija" Novi Pazar, 4th grade, general major. From this year I started a programming course,
+        I finished HTML-CSS and JavaScript</p>
+        <p style="width: 700px;">Future Aspirations: At 18, I am stands at the crossroads of possibility. As he continues to master HTML-CSS, JavaScript and React, i envisions a future
+           where coding skills and basketball prowess converge in unique and innovative ways. Whether it's creating cutting-edge web
+            applications or inspiring others through his basketball journey, I am poised to leave an indelible mark on both the 
+             and sporting landscapes.</p>
+             
+        <button><a href="cv.html">Click for all info.</a></button>
+  </section>
+  <section id="projects">
+    <h1>PROJECTS</h1>
+    
+    <div class="line1">
+      <div class="container">
+        <img src="projects_img/travelly.png" class="image">
+        <div class="overlay">
+          <div class="text">Travelly site</div>
+        </div>
+        <p><a href="file:///C:/Users/computer/Desktop/html-css-course/Travelly/index.html">Check it out!</a></p>
+      </div>
+     
+    </div>
+    
+    <div class="line2"></div>
+  </section>
+  <section id="contactUs"></section>
   
   <script src="app.js"></script>
 </body>
