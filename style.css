@@ -120,8 +120,8 @@ nav h1 a{
 #projects{
   display: flex;
   width: 100%;
-  min-height: 50rem;
-  background-color: #010F36;
+  min-height: 58rem;
+  background-color: #010F36 ;
   color: white;
   flex-direction: column;
 }
@@ -131,65 +131,150 @@ nav h1 a{
 }
 .line1 {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 25rem;
+  height: 29rem;
   position: relative;
 }
 .container {
+  border: 2px dashed white;
   position: relative;
-  width: 50%;
+  width: 45%;
+  height: 22.5rem;
+}
+.container p {
   text-align: center;
+  font-size: 1.5rem;
 }
-
-.container {
-  position: relative;
-  width: 30%;
-  height: 20rem;
-}
-
 .image {
+  opacity: 1;
   display: block;
   width: 100%;
-  height: 20rem;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 80%;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
+  height: 22.5rem;
   transition: .5s ease;
+  backface-visibility: hidden;
 }
-.container:hover .overlay {
-  bottom: 50%;
-  height: 50%;
-}
-.text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
+.middle {
+  transition: .5s ease;
+  opacity: 0;
   position: absolute;
-  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
-.line1 .container a {
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+#btn {
+  background-color: #010F36;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+#btn_photography{
+  background-color: #010F36;
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+#btn_gallery {
+  background-color: #010F36;
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+}
+#btn_youtube{
+  background-color: #010F36;
+  color: white;
+  font-size: 25px;
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
 }
 .line2 {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  height: 25rem;
-  background-color: black;
+  height: 29rem;
+  position: relative;
 }
-#contactUs{
+
+#contactUs {
   width: 100%;
-  min-height: 46rem;
-  background-color: white;
+  height: 800px;
+  background: url(mountain.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-contact {
+  width: 760px;
+  height: 510px;
+  background: rgb(0,0, 0, 0.6);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  gap: 40px;
+  position: relative;
+}
+span {
+  font-size: 20px;
+}
+#input {
+  width: 260px;
+  height: 27px;
+  font-size: 1.4rem;
+  padding: 10px 30px;
+}
+.btn-contact {  
+  width: 100%;
+  height: 60px;
+  font: 18px Arial ;
+  background-color: rgb(76, 110, 151);
+  color: white;
+  border: none;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius:30px ;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  transition: background 0.5s ease-in;
+}
+.btn-contact:hover {
+  background: #27394e;
+}
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #131c27;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  color: white;
+  align-items: center;
+  position: relative;
+}
+.icons-footer {
+  width: 50%;
+  position: absolute;
+  right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  font-size: 30px;
+  cursor: pointer;
 }
