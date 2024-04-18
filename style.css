@@ -220,7 +220,7 @@ nav h1 a{
 }
 .card-contact {
   width: 760px;
-  height: 510px;
+  height: 610px;
   background: rgb(0,0, 0, 0.6);
   border-radius: 30px;
   display: flex;
@@ -231,8 +231,26 @@ nav h1 a{
   gap: 40px;
   position: relative;
 }
+textarea {
+  width: 325px;
+  height: 120px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  position: absolute;
+  bottom: 8rem;
+  left: 16rem;
+}
 span {
   font-size: 20px;
+}
+.span_textarea{
+  position: absolute;
+  left: 10rem;
+  bottom: 14rem;
 }
 #input {
   width: 260px;
@@ -266,6 +284,10 @@ footer {
   color: white;
   align-items: center;
   position: relative;
+}
+footer a{
+  text-decoration: none;
+  color: white;
 }
 .icons-footer {
   width: 50%;
