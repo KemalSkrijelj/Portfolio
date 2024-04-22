@@ -19,3 +19,14 @@ document.getElementById("instagram").onclick = function () {
 document.getElementById("linkedin").onclick = function () {
   location.href = "https://www.linkedin.com/in/kemal-%C5%A1krijelj-b72785218/"
 }
+document.querySelectorAll('.certificate-containers img').forEach(image => {
+  image.onclick = () => {
+  document.querySelector('.popup-img').style.display = 'block';
+  document.querySelector('.popup.img img').src = image.getAttribute('src');
+  }
+})
+
+document.querySelector('.popup.img span').onclick = () => {
+  document.querySelector('.popup-img').style.display = 'none';
+
+}
