@@ -217,7 +217,7 @@ nav h1 a{
   display: flex;
   width: 100%;
   gap: 2rem;
-  min-height: 700px;
+  min-height: 1200px;
   font-size: 20px;
   color: #010F36;
   flex-direction: column;
